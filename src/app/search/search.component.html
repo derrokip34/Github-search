@@ -23,7 +23,7 @@
                         <p>Name: {{response.name}}</p>
                         <p>Company: {{response.company}}</p>
                         <p>Bio: {{response.bio}}</p>
-                        <p><a href="{{response.html_url}}">Click here to view profile on github</a></p>
+                        <a href="{{response.html_url}}"><button class="btn btn-warning">View profile</button></a><br><br>
                         <div class="img">
                             <img src={{response.avatar_url}}>
                         </div>
@@ -36,6 +36,12 @@
                         <p>Following: {{response.following}}</p>
                     </div>
                 </div>   
+            </div>
+            <div class="repos">
+                <h1>GITHUB REPOSITORIES</h1>
+                <div *ngFor='let project of projects'>
+                    <li>{{project.name}}</li>
+                </div>
             </div>
         </div>
     </div>
