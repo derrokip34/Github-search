@@ -45,9 +45,11 @@
                             <div class="card text-white bg-dark mb-3">
                                 <div class="card-header">{{project.name|uppercase}}</div>
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="{{project.html_url}}">{{project.name}}</a></h5>
+                                    
                                     <p class="card-text">{{project.description}}</p>
-                                    <p class="card-text">Created on: </p>
+                                    <p class="card-text">Created on: {{project.created_at|date}}</p>
+                                    <p class="card-text">Updated on: {{project.updated_at|date}}</p>
+                                    <a href="{{project.html_url}}"><button class="btn btn-secondary">Check repository</button></a>
                                 </div>
                             </div>
                         </div>
