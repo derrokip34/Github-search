@@ -19,7 +19,7 @@ export class GitHttpService {
   }
 
   findUserRepo() {
-    return this.http.get('https://api.github.com/users/' + this.username + '?access_token=99a32c70d810324b00e576547bd699c2f2ed3060');
+    return this.http.get('https://api.github.com/users/' + this.username + '/repos?access_token=99a32c70d810324b00e576547bd699c2f2ed3060');
   }
 
   userName(username: string) {
