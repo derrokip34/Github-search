@@ -15,11 +15,11 @@ export class GitHttpService {
   constructor(private http: HttpClient) {}
     
   findUserProfile() {
-    return this.http.get('https://api.github.com/users/' + this.username + '?access_token=C755c2a99d225530b5cb5b9bbafbe8381a8e0bdc');
+    return this.http.get('https://api.github.com/users/' + this.username + '?access_token=99a32c70d810324b00e576547bd699c2f2ed3060');
   }
 
   findUserRepo() {
-    return this.http.get('https://api.github.com/users/' + this.username + '?access_token=C755c2a99d225530b5cb5b9bbafbe8381a8e0bdc');
+    return this.http.get('https://api.github.com/users/' + this.username + '?access_token=99a32c70d810324b00e576547bd699c2f2ed3060');
   }
 
   userName(username: string) {

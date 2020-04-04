@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GitHttpService } from '../git/git-http.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-search',
@@ -7,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  username: any;
+  response: any;
+  projects: any;
+
+  constructor(private service: GitHttpService, private http: HttpClient) {}
+
+  showUserProfile() {
+    this.service.userName(this.username);
+    this.service.findUserProfile().subscribe(response =>{
+      this.response = response;
+    });
+    this.service.findUserRepo().subscribe(projects =>{
+      this.projects = projects;
+      console.log(projects)
+    })
+  }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,20 @@
-<p>search works!</p>
+<body>
+    <div class="container">
+        <div class="search">
+            <form #searchForm='ngForm'>
+                <div class="form-group">
+                    <label for="user">Github User</label><br>
+                    <input type="text" class="form-control" id="user" [(ngModel)]='username' name='username' #user='ngModel'>
+                </div><br>
+                <button type="submit" class="yes" class="btn btn-primary" (click)='showUserProfile()'>Search</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div *ngIf='response'>
+                    <h1>{{response.login}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
