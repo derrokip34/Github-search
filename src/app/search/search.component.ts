@@ -13,7 +13,9 @@ export class SearchComponent implements OnInit {
   response: any;
   projects: any;
 
-  constructor(private service: GitHttpService, private http: HttpClient) {}
+  constructor(private service: GitHttpService, private http: HttpClient) {
+    this.username = "derrokip34"
+  }
 
   showUserProfile() {
     this.service.userName(this.username);
