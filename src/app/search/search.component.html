@@ -6,8 +6,8 @@
                 <div class="col-md-4">
                     <form #searchForm='ngForm'>
                         <div class="form-group">
-                            <label for="user">Github User</label><br>
-                            <input type="text" class="form-control" id="user" [(ngModel)]='username' name='username' #user='ngModel'>
+                            <label for="user">Github username</label><br>
+                            <input type="text" class="form-control" id="user" [(ngModel)]='username' name='username' #user='ngModel' placeholder="Your github username">
                         </div>
                         <button type="submit" class="yes" class="btn btn-primary" (click)='showUserProfile()'>Search</button>
                     </form>
