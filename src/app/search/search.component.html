@@ -39,8 +39,20 @@
             </div>
             <div class="repos">
                 <h1>GITHUB REPOSITORIES</h1>
-                <div *ngFor='let project of projects'>
-                    <li>{{project.name}}</li>
+                <div *ngFor='let project of projects'><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card text-white bg-dark mb-3">
+                                <div class="card-header">{{project.name|uppercase}}</div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="{{project.html_url}}">{{project.name}}</a></h5>
+                                    <p class="card-text">{{project.description}}</p>
+                                    <p class="card-text">Created on: </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
                 </div>
             </div>
         </div>
