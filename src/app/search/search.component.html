@@ -15,6 +15,34 @@
                 <div class="col-md-4"></div>
             </div>
         </div><br>
-        
+        <div *ngIf='response'>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="details">
+                        <h1>{{response.login}}</h1>
+                        <p>Name: {{response.name}}</p>
+                        <p>Company: {{response.company}}</p>
+                        <p>Bio: {{response.bio}}</p>
+                        <div class="img">
+                            <img src={{response.avatar_url}}>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="numbers">
+                        <p>Number of repositories: {{response.public_repos}}</p>
+                        <p>Followers: {{response.followers}}</p>
+                        <p>Following: {{response.following}}</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 profile-btn">
+                    <button type="submit" class="btn btn-secondary"><a href="{{response.html_url}}">Profile</a></button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
     </div>
 </body>

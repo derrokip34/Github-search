@@ -1,3 +1,6 @@
-.search {
+.search, .profile-btn {
     text-align: center;
+}
+.profile-btn {
+    color: aliceblue;
 }
