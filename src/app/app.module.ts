@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
+import { HighlightRepoDirective } from './highlight-repo.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    HighlightRepoDirective
   ],
   imports: [
     BrowserModule,
