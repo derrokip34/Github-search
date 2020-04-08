@@ -41,7 +41,7 @@
                 <h1>{{response.login}}'s GITHUB REPOSITORIES ({{response.public_repos}})</h1>
                 <div>
                     <div class="row card-group">
-                        <div class="col-6" *ngFor="let project of projects">
+                        <div class="col-6" *ngFor="let project of projects" appHighlightRepo>
                             <div class="card text-white bg-dark mb-2">
                                 <div class="card-header">{{project.name|uppercase}}</div>
                                 <div class="card-body">
