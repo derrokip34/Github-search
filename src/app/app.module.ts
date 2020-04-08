@@ -18,7 +18,7 @@ import { SearchRepoPipe } from './search-repo.pipe';
     SearchComponent,
     HomeComponent,
     HighlightRepoDirective,
-    SearchRepoPipe
+    SearchRepoPipe,
   ],
   imports: [
     BrowserModule,
