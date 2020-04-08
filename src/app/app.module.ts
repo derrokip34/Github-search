@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { HighlightRepoDirective } from './highlight-repo.directive';
+import { SearchRepoPipe } from './search-repo.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     HomeComponent,
-    HighlightRepoDirective
+    HighlightRepoDirective,
+    SearchRepoPipe
   ],
   imports: [
     BrowserModule,
