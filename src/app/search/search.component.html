@@ -38,22 +38,22 @@
                 </div>   
             </div>
             <div class="repos">
-                <h1>GITHUB REPOSITORIES</h1>
-                <div *ngFor='let project of projects'><br>
-                    <div class="row">
-                        <div class="col-md-6"  appHighlightRepo>
-                            <div class="card text-white border-danger bg-dark mb-3">
+                <h1>{{response.login}}'s GITHUB REPOSITORIES</h1>
+                <div>
+                    <div class="row card-group">
+                        <div class="col-6" *ngFor="let project of projects">
+                            <div class="card text-white bg-dark mb-2">
                                 <div class="card-header">{{project.name|uppercase}}</div>
                                 <div class="card-body">
-                                    
-                                    <p class="card-text">{{project.description}}</p>
-                                    <p class="card-text">Created on: {{project.created_at|date}}</p>
-                                    <p class="card-text">Updated on: {{project.updated_at|date}}</p>
-                                    <a href="{{project.html_url}}"><button class="btn btn-secondary">Check repository</button></a>
+                                    <p>{{project.description}}</p>
+                                    <p>Created on {{project.created_at|date}}</p>
+                                    <p>Last updated on {{project.updated_at|date}}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="{{project.html_url}}"><button class="btn btn-primary">View Repository</button></a>  
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3"></div>
                     </div>
                 </div>
             </div>
