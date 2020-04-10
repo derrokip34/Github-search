@@ -25,7 +25,7 @@ An angular app where a github user can search for his/her github profile and see
 
 #### Open localhost:4200 on your web browser
 
-## [Github-search live site](https://derrokip34.github.io/Quotes/)
+## [Github-search live site](https://derrokip34.github.io/Github-search/)
 
 ## TECHNOLOGIES USED
 - HTML
