@@ -1,27 +1,56 @@
-# GithubSearch
+# GITHUB-SEARCH
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+## AUTHOR
+- [Derrick Kiprop](https://github.com/derrokip34)
 
-## Development server
+## PROJECT DESCRIPTION
+An angular app where a github user can search for his/her github profile and see his details, repositories and repositories' information
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## SETUP INSTRUCTIONs
+#### Prerequisites
+- A web browser
+- Github account
+- Terminal
 
-## Code scaffolding
+#### Clone this repository
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Navigate into the Github-search folder by typing the following command
+`cd Github-search`
 
-## Build
+#### Downloading the dependencies by typing the following command
+`npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Type the following command in your terminal
+`ng serve`
 
-## Running unit tests
+#### Open localhost:4200 on your web browser
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## [Github-search live site](https://derrokip34.github.io/Quotes/)
 
-## Running end-to-end tests
+## TECHNOLOGIES USED
+- HTML
+- TypeScript
+- CSS
+- Bootstrap
+- Markdown
+- Angular
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## BDD
+#### Input Required
+User's github login
 
-## Further help
+#### Behaviour
+The app will get the user's profile form github
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Output
+The app will display the user's details on github including user's:
+- Name
+- Bio
+- Avatar
+- Number of followers and following
+- Repositories and description
+
+## CONTACT INFORMATION
+Incase of any bugs you can contact me on my [email](derrickip34@gmail.com)
+
+## LICENSE & COPYRIGHT INFORMATION
