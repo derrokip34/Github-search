@@ -54,3 +54,4 @@ The app will display the user's details on github including user's:
 Incase of any bugs you can contact me on my [email](derrickip34@gmail.com)
 
 ## LICENSE & COPYRIGHT INFORMATION
+[MIT License](https://github.com/derrokip34/Github-search/blob/master/license.md)
